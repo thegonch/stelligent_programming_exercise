@@ -67,8 +67,9 @@ class RunTestCases(SearchLocalityTestCase):
                              args.context, args.dir_name)
         self.assertFalse(result)
 
-        args = self.parser.parse_args(['no humoured', 'so comparison \
-                                       inquietude', '5', 'more_tests'])
+        args = self.parser.parse_args(['no humoured',
+                                       'so comparison inquietude', '5',
+                                       'more_tests'])
         result = parse_files(args.term_1.lower(), args.term_2.lower(),
                              args.context, args.dir_name)
         self.assertTrue(result)
